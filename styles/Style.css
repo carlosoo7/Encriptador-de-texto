@@ -243,7 +243,13 @@ h3{
     .Botones_Conjuntos{
         margin: 0em;
         gap: 0;
-        padding: 0;
+        padding: 1em;
+    }
+    .Boton1{
+        width: 10em;
+    }
+    .Boton2{
+        width: 10em;
     }
 }
 
