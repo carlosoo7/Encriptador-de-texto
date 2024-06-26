@@ -108,9 +108,11 @@ function Desencriptar(){
             }
         }    
         textarea.value=''; //Al Desencriptarlimpiamos el area de texto
-        hiddenelementos('Imagen','true');hiddenelementos('Titulo2','true');
+        hiddenelementos('Imagen','true');
+        hiddenelementos('Titulo2','true');
         hiddenelementos('texto_Mensaje','true');
-        cambiarPosition(); aparecerBoton();
+        cambiarPosition();
+        aparecerBoton();
     } 
 
 
