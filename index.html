@@ -1,0 +1,46 @@
+<!-- Codigo desarrollado por Carlos Fernando Calderon Mora... Colombia -->
+
+<!DOCTYPE html>
+<html lang="ee-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/Style.css">
+</head>
+<body>
+    <header> 
+        <h4>Encriptador de textos</h4>       
+    </header>
+    <main>        
+        <section class="area_Izquierda">
+            <h1 class="Logo">CFCM</h1>            
+            <div class="area_Izquierda_sinlogo">
+            <textarea class="areaDeTexto" name="Textoarea" id="Textoarea">Ingrese el texto aquí</textarea>
+            <p class="advertencia"><img class="Exclamacion" src="assets/SimboloExlcamacion.png" alt="Simbolo de Exclamacion">Solo letras minúsculas y sin acento</p>
+            <div class="Botones_Conjuntos">
+                <button onclick="Encriptar();" class="Boton1">Encriptar</button>
+                <button onclick="Desencriptar();" class="Boton2">Desencriptar</button>
+            </div>
+            </div>
+        </section>
+        <div class="area_Derecha_entera">                
+        <section class="area_Derecha_sinBoton" id="area_Derecha">            
+                              
+            <img class="Imagen" id="Imagen" src="assets/pngwing.com.png" alt="Imagen de texto no encontrado" >
+            <h2 class="Titulo_texto_Mensaje" id="Titulo2" >Ningun Mensaje Fue encontrado</h2>
+            <p class="texto_Mensaje" id="texto_Mensaje" >Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="Pcopias_grupo">
+                <p class="Pcopias" id="1"></p><p class="Pcopias" id="2"></p><p class="Pcopias" id="3"></p><p class="Pcopias"id="4"></p>
+                <p class="Pcopias" id="5"></p><p class="Pcopias" id="6"></p><p class="Pcopias" id="7"></p><p class="Pcopias"id="8"></p>
+                <p class="Pcopias" id="9"></p><p class="Pcopias" id="10"></p>
+            </div>                                           
+        </section>
+        <div class="Contenedor_Boton_Copiar"><button class="Boton_Copiar" id="Boton_Copiar" onclick="copiarTexto()" hidden >Copiar</button></div>
+        </div>     
+    </main>
+    <footer><h3>Desacrrolado por Carlos Fernando Calderon Mora año 2024</h3></footer>
+    <script src="app.js"></script>
+</body>
+</html>
+<!-- Codigo desarrollado por Carlos Fernando Calderon Mora... Colombia -->

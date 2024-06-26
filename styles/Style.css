@@ -1,0 +1,250 @@
+/*Codigo desarrollado por Carlos Fernando Calderon Mora... Colombia*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;   
+}
+:root { 
+    --colorPrimario: #E9ECF8; 
+    --colorSecundario: #D8DFE8;    
+    --colorTerciario: #0A3871;    
+    --colorCuaternario: #0cb7f2 ; 
+    --fuentePrimaria: "Inter", sans-serif;
+}
+header{    
+    background-color: var(--colorTerciario);
+}
+h4{
+    margin: 2%;
+    text-align: center;
+    font-family: var(--fuentePrimaria);
+    color: var(--colorPrimario);
+    font-size: 1.5em;
+}
+
+body {
+    background-color: var(--colorPrimario);
+    color: var(--colorTerciario);
+    font-family: var(--fuentePrimaria);
+    display: flex;
+    flex-direction: column;  
+}
+
+
+main {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;   
+    gap: 10em;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.area_Izquierda {
+    background-color: var(--colorPrimario); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.Logo {
+    font-family: var(--fuentePrimaria);
+    font-size: 2em;
+    margin-bottom: 0.5em;  
+}
+
+
+.area_Izquierda_sinlogo{
+
+    margin-left: 3em;
+
+}
+
+.areaDeTexto {
+    width: 100%;
+    color: var(--colorTerciario);
+    height: 14em;
+    font-size: 1.5em;
+    font-family: var(--fuentePrimaria);
+    background-color: var(--colorPrimario);
+    border: none;
+    outline: none;
+    padding: 1em;
+    resize: none;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+
+.advertencia {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1em;
+    margin-bottom: 2em;
+    font-family: var(--fuentePrimaria);
+}
+
+.Exclamacion {
+    width: 1em;
+    height: 1em;
+}
+
+.Botones_Conjuntos {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.Boton1 {
+    width: 15em;
+    height: 3em;
+    border-radius: 24px;
+    background-color: var(--colorTerciario);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fuentePrimaria);
+}
+.Boton2{
+    width: 15em;
+    height: 3em;
+    border-radius: 24px;
+    background-color: var(--colorSecundario);
+    border: 2px, solid, var(--colorTerciario);
+    color: var(--colorTerciario);    
+    cursor: pointer;
+    font-family: var(--fuentePrimaria);
+}
+
+.area_Derecha_entera{
+    background-color: white; /* este hace que el boton y el area drecha se vean como un elemento*/
+    border-radius: 38px;
+}
+
+.area_Derecha_sinBoton {
+    flex: 1;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;    
+    height: 38em;
+    width: 19em;   
+    overflow: hidden;
+    
+    
+}
+.Imagen { /*Imagen derecha*/
+    width: 10em;
+    height: auto;
+}
+
+.Titulo_texto_Mensaje{
+    margin-top: 1em;
+    font-family: var(--fuentePrimaria);
+}
+.texto_Mensaje {
+    margin-top: 1em;
+    font-family: var(--fuentePrimaria);
+}
+.Pcopias_grupo{  /* Grupo de <p> donde se añaden los textos encriptados o desencriptados */
+    max-width: 100%;
+    overflow-wrap: break-word; /* Manejo de palabras */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3em;
+    font-family: var(--fuentePrimaria);
+    font-size: 1.2em;
+    overflow-y: auto;
+    overflow-x: hidden;     
+    position: absolute;
+    }
+
+.Pcopias{         /* todos los <p> de textos encriptados o desencriptados*/ 
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em;
+    padding: 0.5em;
+    word-wrap: break-word; /* Manejo de palabras */  
+}
+
+.Contenedor_Boton_Copiar{ /*Div contenedor del boton*/
+padding: 1em;    
+display: flex;
+justify-content: center;
+}
+.Boton_Copiar{
+    border: 2px, solid, var(--colorTerciario);    
+    width: 21em;
+    height: 3em;    
+    color: var(--colorTerciario);
+    border-radius: 32px;    
+    cursor: pointer;
+    font-family: var(--fuentePrimaria);
+    
+}
+
+/*hovers*/
+.Boton1:hover{
+    background-color: var(--colorCuaternario);
+}
+.Boton2:hover{
+    background-color: var(--colorCuaternario);
+}
+.Boton_Copiar:hover{
+    background-color: bisque;
+}
+
+footer{    
+    background-color: var(--colorTerciario);
+}
+h3{
+    margin: 2%;
+    text-align: center;
+    font-family: var(--fuentePrimaria);
+    color: var(--colorPrimario);
+}
+
+
+
+@media(max-width: 425px) {
+   main{        
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-content:center; 
+        align-items: center;     
+    }      
+    .area_Derecha{                               
+        height: auto;
+        width: 23em;   
+    }
+    .area_Izquierda{
+        width: auto;
+        height: auto;
+        padding-left: 3em;
+    }
+    .areaDeTexto{
+        height: 15em;
+        width: auto;
+    }
+    .Logo{      
+        padding-left: 1.5em;
+    }
+    .Botones_Conjuntos{
+        margin: 0em;
+        gap: 0;
+        padding: 0;
+    }
+}
+
+/*Codigo desarrollado por Carlos Fernando Calderon Mora... Colombia*/
